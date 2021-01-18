@@ -162,8 +162,8 @@ text0.pack(side='top')
 text1 = Label(top, text=
             'W - Move Tello Up\t\t\tArrow Up - Move Tello Forward\n'
             'S - Move Tello Down\t\t\tArrow Down - Move Tello Backward\n'
-            'A - Rotate Tello Counter-Clockwise\tArrow Left - Move Tello Left\n'
-            'D - Rotate Tello Clockwise\t\tArrow Right - Move Tello Right',
+            'A - Rotate Tello Counter-Clockwise\t\tArrow Left - Move Tello Left\n'
+            'D - Rotate Tello Clockwise\t\t\tArrow Right - Move Tello Right',
             justify="left")
 text1.pack(side='top')
 
