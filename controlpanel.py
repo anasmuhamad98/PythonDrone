@@ -1,6 +1,6 @@
 import tello
 import time
-import cv2
+# import cv2
 import threading
 from tkinter import *
 
@@ -75,43 +75,51 @@ def land():
 
 def updateDistancebar():
     distance = distance_bar.get()
-    print ('reset distance to %.1f' % distance)
+    print ('reset distance to %.2f' % distance)
 
 def updateDegreebar():
     degree = degree_bar.get()
     print ('reset degree to %d' % degree)
 
 def on_keypress_w(event):
-    print ("up 30 m")
-    billy.send("up 30", 1)
+    distance = distance_bar.get()
+    print ('up distance to %.2f' % distance)
+    billy.send("up %.2f" % distance, 1)
 
 def on_keypress_s(event):
-    print ("down 30 m")
-    billy.send("down 30", 1)
+    distance = distance_bar.get()
+    print ('down distance to %.2f' % distance)
+    billy.send("down %.2f" % distance, 1)
 
 def on_keypress_a(event):
-    print ("ccw 30 degree")
-    billy.send("ccw 30", 1)
+    degree = degree_bar.get()
+    print ('ccw degree to %d' % degree)
+    billy.send("ccw %d" % degree, 1)
 
 def on_keypress_d(event):
-    print ("cw 30 m")
-    billy.send("cw 30", 1)
+    degree = degree_bar.get()
+    print ('cw degree to %d' % degree)
+    billy.send("cw %d" % degree, 1)
 
 def on_keypress_up(event):
-    print ("forward 30 m")
-    billy.send("forward 30", 1)
+    distance = distance_bar.get()
+    print ('forward distance to %.2f' % distance)
+    billy.send("forward %.2f" % distance, 1)
 
 def on_keypress_down(event):
-    print ("backward 30 m")
-    billy.send("back 30", 1)
+    distance = distance_bar.get()
+    print ('back distance to %.2f' % distance)
+    billy.send("back %.2f" % distance, 1)
 
 def on_keypress_left(event):
-    print ("left 30 m")
-    billy.send("left 30", 1)
+    distance = distance_bar.get()
+    print ('left distance to %.2f' % distance)
+    billy.send("left %.2f" % distance, 1)
 
 def on_keypress_right(event):
-    print ("right 30 m")
-    billy.send("right 30", 1)
+    distance = distance_bar.get()
+    print ('right distance to %.2f' % distance)
+    billy.send("right %.2f" % distance, 1)
 
 
 def openflip():
