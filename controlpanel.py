@@ -1,6 +1,6 @@
 import tello
 import time
-# import cv2
+import cv2
 import threading
 from tkinter import *
 
