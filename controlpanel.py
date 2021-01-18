@@ -83,42 +83,42 @@ def updateDegreebar():
 
 def on_keypress_w(event):
     distance = distance_bar.get()
-    print ('up distance to %.2f' % distance)
+    print ('up %.2f m' % distance)
     billy.send("up %.2f" % distance, 1)
 
 def on_keypress_s(event):
     distance = distance_bar.get()
-    print ('down distance to %.2f' % distance)
+    print ('down %.2f m' % distance)
     billy.send("down %.2f" % distance, 1)
 
 def on_keypress_a(event):
     degree = degree_bar.get()
-    print ('ccw degree to %d' % degree)
+    print ('ccw %d degree' % degree)
     billy.send("ccw %d" % degree, 1)
 
 def on_keypress_d(event):
     degree = degree_bar.get()
-    print ('cw degree to %d' % degree)
+    print ('cw %d degree' % degree)
     billy.send("cw %d" % degree, 1)
 
 def on_keypress_up(event):
     distance = distance_bar.get()
-    print ('forward distance to %.2f' % distance)
+    print ('forward %.2f m' % distance)
     billy.send("forward %.2f" % distance, 1)
 
 def on_keypress_down(event):
     distance = distance_bar.get()
-    print ('back distance to %.2f' % distance)
+    print ('back %.2f m' % distance)
     billy.send("back %.2f" % distance, 1)
 
 def on_keypress_left(event):
     distance = distance_bar.get()
-    print ('left distance to %.2f' % distance)
+    print ('left %.2f m' % distance)
     billy.send("left %.2f" % distance, 1)
 
 def on_keypress_right(event):
     distance = distance_bar.get()
-    print ('right distance to %.2f' % distance)
+    print ('right %.2f m' % distance)
     billy.send("right %.2f" % distance, 1)
 
 
